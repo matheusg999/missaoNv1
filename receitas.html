@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Receitas do Auguste Gusteau</title>
+    <link rel="stylesheet" href="formatos.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #1a2631; /* Cor de fundo consistente */
+        }
+        .receitas-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .receita-painel {
+            background-color: #F4F1DE;
+            border: 1px solid #D4AC0D;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px; /* Largura dos painéis */
+            margin-bottom: 20px; /* Espaço entre os painéis */
+        }
+        .receita-imagem {
+            width: 100%; /* Garante que a imagem ocupe toda a largura do painel */
+            height: 180px; /* Altura fixa para todas as imagens */
+            object-fit: cover; /* Garante que a imagem se encaixe no espaço, mantendo a proporção */
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Início</a></li>
+                <li><a href="receitas.html">Receitas</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container-fluid">
+        <h1 style="color: #D4AC0D;">Receitas de Auguste Gusteau</h1>
+        <div class="receitas-container">
+            <!-- Painel da primeira receita -->
+            <div class="receita-painel card">
+                <img class="card-img-top receita-imagem" src="ratatouille.png" alt="Ratatouille">
+                <div class="card-body">
+                    <h2 class="card-title receita-nome">Ratatouille</h2>
+                    <ul class="receita-itens card-text">
+                        <li>2 abobrinhas</li>
+                        <li>1 berinjela</li>
+                        <li>2 tomates</li>
+                        <li>1 pimentão vermelho</li>
+                        <li>2 dentes de alho</li>
+                    </ul>
+                    <hr>
+                    <div class="receita-preparo card-text">
+                        <p>Corte os vegetais em rodelas finas, monte em camadas e asse com molho de tomate por 45 minutos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Painel da segunda receita -->
+            <div class="receita-painel card">
+                <img class="card-img-top receita-imagem" src="quiche.png" alt="Quiche Lorraine">
+                <div class="card-body">
+                    <h2 class="card-title receita-nome">Quiche Lorraine</h2>
+                    <ul class="receita-itens card-text">
+                        <li>200g de bacon</li>
+                        <li>3 ovos</li>
+                        <li>200ml de creme de leite</li>
+                        <li>1 massa brisée (massa podre)</li>
+                        <li>100g de queijo Gruyère</li>
+                    </ul>
+                    <hr>
+                    <div class="receita-preparo card-text">
+                        <p>Asse a massa brisée, adicione o recheio de ovos, creme de leite, bacon e queijo. Asse por 30 minutos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Painel da terceira receita -->
+            <div class="receita-painel card">
+                <img class="card-img-top receita-imagem" src="souffle.png" alt="Soufflé de Queijo">
+                <div class="card-body">
+                    <h2 class="card-title receita-nome">Soufflé de Queijo</h2>
+                    <ul class="receita-itens card-text">
+                        <li>50g de manteiga</li>
+                        <li>50g de farinha de trigo</li>
+                        <li>250ml de leite</li>
+                        <li>100g de queijo Gruyère ralado</li>
+                        <li>4 ovos</li>
+                    </ul>
+                    <hr>
+                    <div class="receita-preparo card-text">
+                        <p>Prepare o roux com manteiga e farinha, adicione leite e queijo. Incorpore as gemas e claras batidas, e leve ao forno.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Matheus Gomes</p>
+    </footer>
+</body>
+</html>

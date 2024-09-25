@@ -1,0 +1,72 @@
+/* Definir uma área para agrupar os painéis das receitas, com Flexbox e responsividade */
+.receitas-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os painéis se ajustem ao tamanho da tela */
+    justify-content: center; /* Centraliza os painéis */
+    gap: 20px; /* Espaçamento entre os painéis */
+    max-height: 80vh; /* Limita a altura para caber a barra de rolagem */
+    overflow-y: auto; /* Barra de rolagem vertical automática */
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #a32828;
+    border-radius: 10px;
+}
+
+.receita-painel {
+    background-color: #F4F1DE;
+    border: 1px solid #D4AC0D;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px; /* Largura dos painéis */
+    margin-bottom: 20px; /* Espaço entre os painéis */
+    overflow: hidden; /* Garante que o conteúdo não exceda o painel */
+}
+
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Alinha o conteúdo para ocupar o espaço disponível */
+    height: 100%; /* Faz com que o card ocupe toda a altura disponível */
+}
+
+
+/* Formatação para o nome da receita */
+.receita-nome {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.receita-imagem {
+    width: 100%; /* Faz a imagem ocupar toda a largura do painel */
+    height: 200px; /* Altura fixa */
+    object-fit: cover; /* Faz a imagem preencher o espaço de forma proporcional */
+}
+
+
+
+/* Formatação para a lista de itens */
+.receita-itens {
+    font-size: 1em;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* Formatação para o modo de preparo */
+.receita-preparo {
+    font-size: 0.9em;
+    text-align: left;
+    overflow-y: auto; /* Permite rolagem interna para o modo de preparo longo */
+    max-height: 100px; /* Limitar a altura da área de preparo para ativar a rolagem */
+    flex-grow: 1; /* Permite que essa área cresça conforme necessário */
+}
+
+/* Tornar os painéis responsivos para telas menores */
+@media (max-width: 768px) {
+    .receita-painel {
+        width: 100%; /* Painéis ocupam toda a largura em telas menores */
+        height: auto; /* Altura ajustável em telas pequenas */
+    }
+}

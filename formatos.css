@@ -1,0 +1,85 @@
+/* Características tipográficas globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a2631;
+    line-height: 1.6;
+    color: #D4AC0D;
+}
+
+/* Definir uma classe para a logotipo */
+.logo {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para as áreas semânticas - Usando Flexbox */
+header, footer {
+    background-color: #53140d;
+    color: #D4AC0D;
+    text-align: center;
+    padding: 1em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Alinhamento da imagem com o título */
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.main-content img.logo {
+    margin-right: 15px; /* Espaçamento entre a imagem e o título */
+}
+
+/* Estilo padrão para main */
+main {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Flexbox para o Menu de Navegação */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #D4AC0D;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+footer {
+    background-color: #53140d;
+    color: #D4AC0D;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px; /* Definindo uma altura menor */
+}
+
+
+/* Tornar as áreas de visualização flexíveis */
+header, main, footer {
+    flex: 1;
+}
